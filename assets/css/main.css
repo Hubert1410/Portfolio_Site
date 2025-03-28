@@ -112,6 +112,20 @@ input, select, textarea {
 			-ms-transition: none !important;
 			transition: none !important;
 		}
+/* Zawijanie */
+
+		pre {
+			background-color: #2d2d2d; /* Ciemne tło */
+			color: #ffffff; /* Biały tekst */
+			padding: 15px;
+			border-radius: 5px;
+			overflow-x: auto; /* Scroll poziomy */
+			white-space: pre-wrap; /* Zawijanie długich linii */
+			word-wrap: break-word;
+		}
+		code {
+			font-family: "Courier New", monospace;
+		}
 
 /* Type */
 
@@ -2657,6 +2671,14 @@ input, select, textarea {
 			}
 
 		}
+		.image.no-zoom img {
+			transition: none !important;
+			transform: none !important;
+		}
+		
+		.image.no-zoom:hover img {
+			transform: none !important;
+		}
 
 	a.image {
 		overflow: hidden;
@@ -2675,6 +2697,9 @@ input, select, textarea {
 			-ms-transform: scale(1.05);
 			transform: scale(1.05);
 		}
+
+
+	
 
 /* Actions */
 
